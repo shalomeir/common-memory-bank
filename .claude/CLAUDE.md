@@ -95,6 +95,11 @@ project/
 - Do not include sensitive information in logs
 - Perform thorough input validation
 
+### 5.3 Environment Variables
+- .env and .env.local is not accessible to LLM due to .gitignore, .aiexclude, etc. but if there is .env.example, it is likely to be set up normally.
+- Assume that .env and .env.local already exists. For template see .env.example. This is an LLM AI inaccessible file, but since it's in env, it can be converted to a variable at runtime
+
+
 ## 6. Test
 
 ### 6.1 Testing Requirements
@@ -119,7 +124,6 @@ project/
 ### 6.4 Local Test Server
 - Once you run a local server for testing, it usually stays up. Don't start local server automatically unless I tell it to (ex: npm run dev, python manage.py runserver)
 - If the environment supports HMR (Hot Module Replacement) and Hot Reloading, any file modifications will already be reflected on the screen, so test with this in mind
-
 
 ## 7. Performance
 
