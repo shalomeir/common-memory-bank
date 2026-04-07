@@ -203,6 +203,6 @@ When asked to enter "Planner Mode" or "Plan Mode" or using the /plan command, or
 - When requesting modification of memory-bank file → Review differences/consistency with PRD → Determine necessity of PRD modification and propose → If PRD is modified → Analyze impact of Taskmaster task and propose update
 - This system ensures that all project deliverables are always consistent.
 - When initializing memory-bank, **prd.txt is not automatically created by default**.
-- However, if scripts/example_prd.txt exists, PRD file(scripts/prd.txt) is created by referring to it.
+- However, if scripts/example_prd.txt exists, PRD file(`scripts/prd.txt`) is created by referring to it.
 - The prd.txt created at this time is managed as the official PRD of the project, and consistency with the core files of memory-bank must be maintained thereafter.
 
